@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grade 12 National Exams</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header { background-color: #007e33; color: white; padding: 1.5em 1em; text-align: center; }
+    .container { max-width: 1000px; margin: 2em auto; padding: 1em; }
+    input[type="text"], select { width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+    .exam-card { background: white; padding: 1.5em; margin-bottom: 1.5em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .exam-card h3 { margin-top: 0; color: #007e33; }
+    .exam-card p { margin: 0.5em 0 1em; }
+    .exam-card a { display: inline-block; padding: 0.7em 1.2em; background-color: #007e33; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s ease; margin-right: 10px; }
+    .exam-card a:hover { background-color: #005a24; }
+    footer { text-align: center; font-size: 0.9em; color: #777; padding: 2em; }
+    .telegram-button { position: fixed; bottom: 20px; right: 20px; background: #0088cc; color: white; padding: 12px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Grade 12 National Exams</h1>
+  <p>Take past national exams online via Microsoft Forms</p>
+</header>
+
+<div class="container">
+  <select id="subjectFilter">
+    <option value="all">All Subjects</option>
+    <option value="Physics">Physics</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Biology">Biology</option>
+    <option value="English">English</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Aptitude">Aptitude</option>
+  </select>
+
+  <input type="text" id="searchInput" placeholder="Search by year (e.g., 2014)...">
+
+  <div id="examList">
+<div class="exam-card" data-subject="Physics">
+  <h3>Physics National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for Physics from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/physics-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/physics-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/r/LCPBgpVMj6" target="_blank">2016 E.C</a>
+</div>
+<div class="exam-card" data-subject="Chemistry">
+  <h3>Chemistry National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for Chemistry from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/chemistry-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/chemistry-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/chemistry-2016" target="_blank">2016 E.C</a>
+</div>
+<div class="exam-card" data-subject="Biology">
+  <h3>Biology National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for Biology from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/biology-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/biology-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/biology-2016" target="_blank">2016 E.C</a>
+</div>
+<div class="exam-card" data-subject="English">
+  <h3>English National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for English from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/english-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/english-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/english-2016" target="_blank">2016 E.C</a>
+</div>
+<div class="exam-card" data-subject="Mathematics">
+  <h3>Mathematics National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for Mathematics from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/mathematics-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/mathematics-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/mathematics-2016" target="_blank">2016 E.C</a>
+</div>
+<div class="exam-card" data-subject="Aptitude">
+  <h3>Aptitude National Exams – 2014-2016 E.C</h3>
+  <p>Official past exams for Aptitude from 2014–2016 E.C.</p>
+  <a href="https://forms.office.com/aptitude-2014" target="_blank">2014 E.C</a>
+  <a href="https://forms.office.com/aptitude-2015" target="_blank">2015 E.C</a>
+  <a href="https://forms.office.com/aptitude-2016" target="_blank">2016 E.C</a>
+</div>
+
+  </div>
+</div>
+
+<a class="telegram-button" href="https://t.me/YourTelegramBot" target="_blank">📲 Support</a>
+
+<footer>
+  © 2025 Ethiopian Grade 12 National Exams. Powered by Microsoft Forms.
+</footer>
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const subjectFilter = document.getElementById("subjectFilter");
+  const examCards = document.querySelectorAll(".exam-card");
+
+  function filterExams() {
+    const textFilter = searchInput.value.toLowerCase();
+    const subject = subjectFilter.value;
+
+    examCards.forEach(card => {
+      const matchesText = card.querySelector("h3").textContent.toLowerCase().includes(textFilter);
+      const matchesSubject = subject === "all" || card.dataset.subject === subject;
+      card.style.display = matchesText && matchesSubject ? "block" : "none";
+    });
+  }
+
+  searchInput.addEventListener("input", filterExams);
+  subjectFilter.addEventListener("change", filterExams);
+</script>
+
+</body>
+</html>
